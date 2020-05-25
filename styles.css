@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+.cal{
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+.display{
+    color: white;
+    text-align: right;
+}
+
+
+.buttons{
+    border-spacing: 0em;
+}
+
+.row-1{
+    display: flex;
+}
+
+.row-2{
+    display: flex;
+}
+
+.row-3{
+    display: flex;
+}
+
+.row-4{
+    display: flex;
+}
+
+.row-5{
+    display: flex;
+}
+
+.x1-size{
+    width: 25%;
+}
+
+.x2-size{
+    width: 50%;
+}
+
+.x3-size{
+    width: 75%;
+}
