@@ -6,6 +6,11 @@
     background-color: black;
 }
 
+body{
+    margin-top: 0px;
+    margin-left: 0px; 
+}
+
 .display{
     color: white;
     text-align: right;
