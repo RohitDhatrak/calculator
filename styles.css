@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.body{
+    padding: 0;
+    margin: 0;
+}
 .cal{
     width: 400px;
     background-color: black;
@@ -11,10 +15,13 @@
     color: white;
     text-align: right;
     height: 100px;
-    font-size: 100px;
+    font-size: 50px;
+    padding-top: 22px;
 }
 
-.buttons{
+.button{
+    background-color: #d8d9db;
+    border: none;
     
 }
 
@@ -26,7 +33,7 @@
 }
 
 .x2-size{
-    width: 49.4%;
+    width: 49.5%;
     height: 100px;
     margin-bottom: 0.8%;
     font-size: xx-large;
@@ -41,4 +48,38 @@
 
 .bottom-buttons{
     margin-bottom: 0px;
+}
+
+.button:last-child{
+    background-color: #df974c;
+    color: white;
+}
+
+.button:focus{
+    outline:none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.button:last-child:hover{
+    background-color: #dfb07e;
+}
+
+.button:focus{
+    background-color: #ebebeb;
+}
+
+.button:last-child:focus{
+    background-color: #dfb07e;
+}
+
+.button:active{
+    background-color: #bbbcbe;
+}
+
+.button:last-child:active{
+    background-color: #dd8d37;
 }
