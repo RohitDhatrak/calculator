@@ -1,11 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
-.body{
-    padding: 0;
-    margin: 0;
-}
 .cal{
     width: 400px;
     background-color: black;
@@ -22,32 +17,56 @@
 .button{
     background-color: #d8d9db;
     border: none;
-    
+    margin-right: 2.5px;
+}
+
+.row1{
+    display:flex;
+}
+
+.row2{
+    display:flex;
+}
+
+.row3{
+    display:flex;
+}
+
+.row4{
+    display:flex;
+}
+
+.row5{
+    display:flex;
 }
 
 .x1-size{
-    width: 24.25%;
+    width: 25%;
     height: 100px;
-    margin-bottom: 0.8%;
+    margin-bottom: 0.7%;
     font-size: xx-large;    
 }
 
 .x2-size{
-    width: 49.5%;
+    width: 50.7%;
     height: 100px;
-    margin-bottom: 0.8%;
+    margin-bottom: 0.7%;
     font-size: xx-large;
 }
 
 .x3-size{
-    width: 74.7%;
+    width: 76.5%;
     height: 100px;
-    margin-bottom: 0.8%;
+    margin-bottom: 0.7%;
     font-size: xx-large;
 }
 
 .bottom-buttons{
     margin-bottom: 0px;
+}
+
+.right-buttons{
+    margin-right: 0px;
 }
 
 .button:last-child{
