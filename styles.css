@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .cal{
     width: 400px;
     background-color: black;
@@ -17,6 +18,7 @@ body{
     height: 100px;
     font-size: 50px;
     padding-top: 22px;
+    padding-right: 10px;
 }
 
 .button{
@@ -79,9 +81,7 @@ body{
     color: white;
 }
 
-.button:focus{
-    outline:none;
-}
+.button:focus{outline:none;}
 
 .button:hover{
     cursor: pointer;
