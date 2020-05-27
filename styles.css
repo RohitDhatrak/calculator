@@ -5,11 +5,12 @@
 .cal{
     width: 400px;
     background-color: black;
+    border-radius: 2%;
 }
 
 body{
-    margin-top: 0px;
-    margin-left: 0px; 
+    margin-top: 3px;
+    margin-left: 3px;
 }
 
 .display{
@@ -25,6 +26,7 @@ body{
     background-color: #d8d9db;
     border: none;
     margin-right: 2.5px;
+    border-radius: 12%;
 }
 
 .row1{
@@ -51,7 +53,7 @@ body{
     width: 25%;
     height: 100px;
     margin-bottom: 0.7%;
-    font-size: xx-large;    
+    font-size: xx-large;  
 }
 
 .x2-size{
@@ -61,19 +63,8 @@ body{
     font-size: xx-large;
 }
 
-.x3-size{
-    width: 76.5%;
-    height: 100px;
-    margin-bottom: 0.7%;
-    font-size: xx-large;
-}
-
-.bottom-buttons{
-    margin-bottom: 0px;
-}
-
-.right-buttons{
-    margin-right: 0px;
+.lhs-buttons{
+    margin-left: 0.7%;
 }
 
 .button:last-child{
@@ -81,7 +72,7 @@ body{
     color: white;
 }
 
-.button:focus{outline:none;}
+.button:focus{outline:none;}   /* added a focus element below for selection to retain the accesibility*/
 
 .button:hover{
     cursor: pointer;
