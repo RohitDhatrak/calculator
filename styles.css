@@ -3,14 +3,14 @@
 }
 
 .cal{
-    width: 350px;
+    width: 380px;
     background-color: black;
     border-radius: 2%;
 }
 
 body{
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 2px;
+    margin-left: 2px;
 }
 
 .display{
