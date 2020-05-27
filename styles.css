@@ -2,13 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 .cal{
-    width: 400px;
+    width: 350px;
     background-color: black;
     border-radius: 2%;
 }
