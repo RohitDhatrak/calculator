@@ -11,6 +11,9 @@
 body{
     margin-top: 2px;
     margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .display{
