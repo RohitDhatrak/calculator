@@ -30,6 +30,10 @@ body{
     border: none;
     margin-right: 2.5px;
     border-radius: 12%;
+    width: 25%;
+    height: 100px;
+    margin-bottom: 0.7%;
+    font-size: xx-large;
 }
 
 .row1{
@@ -50,13 +54,6 @@ body{
 
 .row5{
     display:flex;
-}
-
-.x1-size{
-    width: 25%;
-    height: 100px;
-    margin-bottom: 0.7%;
-    font-size: xx-large;  
 }
 
 .x2-size{
