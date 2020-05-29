@@ -4,6 +4,7 @@ let operand;
 let total = 0;
 let flag = 0;
 let displayVal;
+let decimalChecker;
 
 window.onload = function(){
     const inpVal = document.querySelector(".buttons").addEventListener("click",function(event) {
@@ -76,22 +77,42 @@ function calculateValue(value) {
         
         if (operator === "+") {
             total += operand;
-            display(total.toFixed(2));
+            if (total % 1 === 0) {
+                display(total);    
+            }
+            else {
+                display(total.toFixed(2));
+            }
         }
 
         if (operator === "-") {
             total -= operand;
-            display(total.toFixed(2));
+            if (total % 1 === 0) {
+                display(total);    
+            }
+            else {
+                display(total.toFixed(2));
+            }
         }
 
         if (operator === "×") {
             total *= operand;
-            display(total.toFixed(2));
+            if (total % 1 === 0) {
+                display(total);    
+            }
+            else {
+                display(total.toFixed(2));
+            }
         }
 
         if (operator === "÷") {
             total /= operand;
-            display(total.toFixed(2));
+            if (total % 1 === 0) {
+                display(total);    
+            }
+            else {
+                display(total.toFixed(2));
+            }
         }
     }
     operator = value;
