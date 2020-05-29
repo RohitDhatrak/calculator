@@ -76,22 +76,22 @@ function calculateValue(value) {
         
         if (operator === "+") {
             total += operand;
-            display(total);
+            display(total.toFixed(2));
         }
 
         if (operator === "-") {
             total -= operand;
-            display(total);
+            display(total.toFixed(2));
         }
 
         if (operator === "×") {
             total *= operand;
-            display(total);
+            display(total.toFixed(2));
         }
 
         if (operator === "÷") {
             total /= operand;
-            display(total);
+            display(total.toFixed(2));
         }
     }
     operator = value;
