@@ -1,4 +1,4 @@
-let buffer = "0";
+let buffer = "";
 let operator;
 let operand;
 let total = 0;
@@ -22,7 +22,7 @@ function determineInput(value) {
 
 function determineNumber(value) {
     buffer += value;
-    display(buffer);                    // display function
+    display(buffer);
 }
 
 function determineOperator(value) {
@@ -35,19 +35,26 @@ function determineOperator(value) {
         operand = Number(buffer);
         flag += 1;
         calculateValue(operator);
-        buffer = 0;
-        operand = total;                              // fix needed
+        buffer = total.toString();
+        flag = 0;
     }
 
     else if (value === "←") {
+        buffer = buffer.substring(0,buffer.length - 1);
+        display(buffer);
     }
 
     else if (value === "C") {
         flag = 0;
         total = 0;
-        buffer = "0";
-        displayVal = "0";                                  // display reset
+        buffer = "";
+        displayVal = "0";
         display(displayVal);
+    }
+
+    else if (value == "±") {
+        buffer = "-"
+        display(buffer);
     }
 
     else {
@@ -55,7 +62,7 @@ function determineOperator(value) {
         operand = Number(buffer);
         flag += 1;
         calculateValue(value);
-        buffer = "0";
+        buffer = "";
     }
 }
 
@@ -63,7 +70,6 @@ function calculateValue(value) {
 
     if (flag === 1) {
         total = operand;
-        console.log("if",total);                          //
     }
     
     else {
@@ -71,25 +77,21 @@ function calculateValue(value) {
         if (operator === "+") {
             total += operand;
             display(total);
-            console.log("ans(+): ", total);                     // replace with display function
         }
 
         if (operator === "-") {
             total -= operand;
             display(total);
-            console.log("ans(-): ", total);                     // replace with display function
         }
 
         if (operator === "×") {
             total *= operand;
             display(total);
-            console.log("ans(x): ", total);                     // replace with display function
         }
 
         if (operator === "÷") {
             total /= operand;
             display(total);
-            console.log("ans(/): ", total);                     // replace with display function
         }
     }
     operator = value;
@@ -98,5 +100,4 @@ function calculateValue(value) {
 function display(displayVal) {
     const disp = document.querySelector('.display');
     disp.innerText = displayVal;
-
 }

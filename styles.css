@@ -72,7 +72,7 @@ body{
     color: white;
 }
 
-.button:focus{outline:none;}   /* added a focus element below for selection to retain the accesibility*/
+.button:focus{outline:none;}   /* added a focus element below to retain the accesibility */
 
 .button:hover{
     cursor: pointer;
