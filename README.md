@@ -1,3 +1,3 @@
 # Calculator
-https://rohits-calculator.netlify.app/
+[Link to the site](https://rohits-calculator.netlify.app/)
 ![](/Screenshot.png)
