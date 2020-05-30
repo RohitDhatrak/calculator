@@ -3,10 +3,6 @@
     background-color: black;
 }
 
-button {
-    touch-action: manipulation;
-}
-
 .cal{
     height:80vh;
     width: 380px;
@@ -42,6 +38,7 @@ body{
     height: 13vh;
     margin-bottom: 0.7%;
     font-size: xx-large;
+    touch-action: manipulation;
 }
 
 .row1{
