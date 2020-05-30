@@ -3,9 +3,9 @@
     background-color: black;
 }
 
-input {
-    font-size: 16px;
-  }  
+button {
+    touch-action: manipulation;
+}
 
 .cal{
     height:80vh;
