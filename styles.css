@@ -23,9 +23,9 @@ body{
 .display{
     color: white;
     text-align: right;
-    height: 20%;
-    font-size: 75px;
-    padding-top: 22px;
+    height: 15%;
+    font-size: 50px;
+    padding-top: 30px;
     padding-right: 15px;
 }
 
@@ -35,7 +35,7 @@ body{
     margin-right: 2.5px;
     border-radius: 12%;
     width: 25%;
-    height: 15vh;
+    height: 13vh;
     margin-bottom: 0.7%;
     font-size: xx-large;
 }
@@ -62,7 +62,7 @@ body{
 
 .x2-size{
     width: 50.7%;
-    height: 15vh;
+    height: 13vh;
     margin-bottom: 0.7%;
     font-size: xx-large;
 }
