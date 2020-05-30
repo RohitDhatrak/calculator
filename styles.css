@@ -3,6 +3,10 @@
     background-color: black;
 }
 
+input {
+    font-size: 16px;
+  }  
+
 .cal{
     height:80vh;
     width: 380px;
