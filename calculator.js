@@ -2,9 +2,7 @@ let buffer = "";
 let operator;
 let operand;
 let total = 0;
-let flag = 0;
-let displayVal;
-let decimalChecker;
+let counter = 0;
 
 window.onload = function(){
     const inpVal = document.querySelector(".buttons").addEventListener("click",function(event) {
@@ -32,36 +30,35 @@ function determineOperator(value) {
         determineNumber(value);
     }
 
-    else if (value === "=") {
-        operand = Number(buffer);
-        flag += 1;
-        calculateValue(operator);
-        buffer = total.toString();
-        flag = 0;
-    }
-
     else if (value === "←") {
         buffer = buffer.substring(0,buffer.length - 1);
         display(buffer);
     }
 
-    else if (value === "C") {
-        flag = 0;
-        total = 0;
-        buffer = "";
-        displayVal = "0";
-        display(displayVal);
+    else if (value == "±") {
+        buffer = "-";
+        display(buffer);
     }
 
-    else if (value == "±") {
-        buffer = "-"
-        display(buffer);
+    else if (value === "C") {
+        counter = 0;
+        total = 0;
+        buffer = "";
+        display(total);
+    }
+
+    else if (value === "=") {
+        operand = Number(buffer);
+        counter += 1;
+        calculateValue(operator);
+        buffer = total.toString();    // to be able to continue operating on the answer
+        counter = 0;
     }
 
     else {
         display(value);
-        operand = Number(buffer);
-        flag += 1;
+        operand = Number(buffer);    // after getting a operator we know that input is complete 
+        counter += 1;
         calculateValue(value);
         buffer = "";
     }
@@ -69,7 +66,7 @@ function determineOperator(value) {
 
 function calculateValue(value) {
 
-    if (flag === 1) {
+    if (counter === 1) {
         total = operand;
     }
     
@@ -77,7 +74,7 @@ function calculateValue(value) {
         
         if (operator === "+") {
             total += operand;
-            if (total % 1 === 0) {
+            if (total % 1 === 0) {          // to check for the presence of decimal
                 display(total);    
             }
             else {
