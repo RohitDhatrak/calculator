@@ -4,11 +4,9 @@ let operand;
 let total = 0;
 let counter = 0;
 
-window.onload = function(){
-    const inpVal = document.querySelector(".buttons").addEventListener("click",function(event) {
-        determineInput(event.target.innerText);
-    });
-}
+const inpVal = document.querySelector(".buttons").addEventListener("click",function(event) {
+    determineInput(event.target.innerText);
+});
 
 function determineInput(value) {
     if (isNaN(parseInt(value))) {
