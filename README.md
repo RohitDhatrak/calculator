@@ -2,4 +2,4 @@
 
 [Link to the website](https://rohits-calculator.netlify.app/)
 
-<img src="./images/preview.jpg" width="500" height="500">
+<img src="./images/preview.jpg" height="500">
