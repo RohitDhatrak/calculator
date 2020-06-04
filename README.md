@@ -2,4 +2,4 @@
 
 [Link to the website](https://rohits-calculator.netlify.app/)
 
-![](/preview.png)
+![](images/preview.png)
