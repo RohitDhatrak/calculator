@@ -2,5 +2,4 @@
 
 [Link to the website](https://rohits-calculator.netlify.app/)
 
-![](/images/preview.jpg)
-<img src="./images/preview.jpg" width="100" height="100">
+<img src="./images/preview.jpg" width="500" height="500">
