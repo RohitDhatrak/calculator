@@ -31,7 +31,7 @@ body{
     border: none;
     margin-right: 2.3px;
     border-radius: 15px;
-    width: 25%;
+    flex-basis: 25%;
     height: 13vh;
     margin-bottom: 2.5px;
     font-size: xx-large;
@@ -59,8 +59,7 @@ body{
 }
 
 .x2-size{
-    width: 50.6%;
-    height: 13vh;
+    flex-basis: 50%;
     margin-bottom: 2.5px;
     font-size: xx-large;
 }
