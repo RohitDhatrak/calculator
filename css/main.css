@@ -4,10 +4,7 @@
 }
 
 .cal{
-    height:80vh;
     width: 380px;
-    background-color: black;
-    border-radius: 2%;
 }
 
 body{
@@ -23,20 +20,20 @@ body{
 .display{
     color: white;
     text-align: right;
-    height: 25%;
+    height: 165px;
     font-size: 50px;
     padding-top: 70px;
     padding-right: 15px;
 }
 
 .button{
-    background-color: #d8d9db;
+    background-color: #e9e9e9;
     border: none;
-    margin-right: 2.5px;
-    border-radius: 12%;
+    margin-right: 2.3px;
+    border-radius: 15px;
     width: 25%;
     height: 13vh;
-    margin-bottom: 0.7%;
+    margin-bottom: 2.5px;
     font-size: xx-large;
     touch-action: manipulation;
 }
@@ -62,18 +59,18 @@ body{
 }
 
 .x2-size{
-    width: 50.7%;
+    width: 50.6%;
     height: 13vh;
-    margin-bottom: 0.7%;
+    margin-bottom: 2.5px;
     font-size: xx-large;
 }
 
 .lhs-buttons{
-    margin-left: 0.7%;
+    margin-left: 2.5px;
 }
 
 .button:last-child{
-    background-color: #df974c;
+    background-color: #f3920b;
     color: white;
 }
 
@@ -81,7 +78,7 @@ body{
 
 .button:hover{
     cursor: pointer;
-    background-color: #ebebeb;
+    background-color: #cfcfcf;
 }
 
 .button:last-child:hover{
@@ -89,7 +86,7 @@ body{
 }
 
 .button:focus{
-    background-color: #ebebeb;
+    background-color: #cfcfcf;
 }
 
 .button:last-child:focus{
@@ -97,7 +94,7 @@ body{
 }
 
 .button:active{
-    background-color: #bbbcbe;
+    background-color: #cfcfcf;
 }
 
 .button:last-child:active{
