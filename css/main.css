@@ -7,12 +7,6 @@
     width: 380px;
 }
 
-@media (min-width: 605px) {
-    .cal {
-    width: 500px;
-    }
-}
-
 body{
     margin-top: 2px;
     margin-left: 2px;
@@ -27,9 +21,50 @@ body{
     color: white;
     text-align: right;
     height: 165px;
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 70px;
     padding-right: 15px;
+}
+
+/* for ipad in potrait view */
+@media (min-width: 605px) and (max-width: 1000px){
+    
+    .cal {
+        width: 500px;
+    }
+
+    .display{
+        font-size: 80px;
+        padding-top: 50px;
+    }
+}
+
+/* for ipad pro */
+@media (min-width: 1024px) and (max-width: 1200px) and (min-height:900px) {
+    
+    .cal {
+        width: 700px;
+    }
+
+    .display{
+        height: 200px;
+        font-size: 80px;
+        padding-top: 80px;
+    }
+}
+
+/* for ipad pro landscape mode */
+@media (min-width: 1200px) and (max-width: 1400px){
+    
+    .cal {
+        width: 500px;
+    }
+
+    .display{
+        height: 200px;
+        font-size: 80px;
+        padding-top: 70px;
+    }
 }
 
 .button{
