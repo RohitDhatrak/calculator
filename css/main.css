@@ -85,7 +85,7 @@ body{
     height: 13vh;
     margin-bottom: 2.5px;
     font-size: xx-large;
-    touch-action: manipulation;
+    touch-action: manipulation;    /* disabling double tap zoom for ios */
 }
 
 .row1{
@@ -109,7 +109,7 @@ body{
 }
 
 .x2-size{
-    flex-basis: 50%;
+    flex-basis: 51%;
     margin-bottom: 2.5px;
     font-size: xx-large;
 }
