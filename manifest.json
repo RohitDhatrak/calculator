@@ -1,0 +1,19 @@
+{
+    "name": "Made by Rohit Dhatrak",
+    "short_name": "Calculator",
+    "theme_color": "#f3920b",
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://rohits-calculator.netlify.app/",
+    "description": "A progressive web app for a calculator made by Rohit Dhatrak",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://github.com/RohitDhatrak/calculator/tree/master/images/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
