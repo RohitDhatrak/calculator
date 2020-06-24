@@ -91,7 +91,7 @@ body {
     height: 13vh;
     margin-bottom: 2.5px;
     font-size: xx-large;
-    touch-action: manipulation; /* disabling double tap zoom for ios */
+    touch-action: manipulation;
 }
 
 .row1 {
@@ -129,12 +129,12 @@ body {
     color: white;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     cursor: pointer;
     background-color: #cfcfcf;
 }
 
-.button:last-child:hover {
+.button:last-child:hover,  .button:last-child:focus {
     background-color: #dfb07e;
 }
 
