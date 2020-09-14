@@ -4,6 +4,30 @@ let operand;
 let total = 0;
 let counter = 0;
 
+const backSpace = document
+    .querySelector(".back-button")
+    .addEventListener("click", function () {
+        determineInput("←");
+    });
+
+const plusMinus = document
+    .querySelector(".sign-button")
+    .addEventListener("click", function () {
+        determineInput("±");
+    });
+
+const divide = document
+    .querySelector(".divide")
+    .addEventListener("click", function (event) {
+        determineInput(event.target.innerText);
+    });
+
+const acButton = document
+    .querySelector(".AC-button")
+    .addEventListener("click", function (event) {
+        determineInput(event.target.innerText);
+    });
+
 const inpVal = document
     .querySelector(".buttons")
     .addEventListener("click", function (event) {
@@ -32,7 +56,7 @@ function determineOperator(value) {
     } else if (value == "±") {
         buffer = "-";
         display(buffer);
-    } else if (value === "C") {
+    } else if (value === "AC") {
         counter = 0;
         total = 0;
         buffer = "";
@@ -54,6 +78,7 @@ function determineOperator(value) {
 
 function calculateValue(value) {
     if (counter === 1) {
+        // i.e it is the first operand
         total = operand;
     } else {
         if (operator === "+") {
@@ -101,6 +126,7 @@ function display(displayVal) {
     disp.innerText = displayVal;
 }
 
+// function  for tab highlight
 (function (d) {
     var style_element = d.createElement("STYLE"),
         dom_events = "addEventListener" in d,

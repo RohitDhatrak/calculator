@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A calculator made by Rohit Dhatrak" />
+        <meta name="theme-color" content="#000000" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="./images/logo.svg"
+        />
+        <link rel="apple-touch-icon" href="./images/icon.png" />
+        <link rel="manifest" href="./manifest.json" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-168216839-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-168216839-1");
+        </script>
+    </head>
+
+    <body>
+        <div class="cal">
+            <div class="display">0</div>
+            <section class="buttons">
+                <div class="row1">
+                    <button class="button lhs-buttons">C</button>
+                    <button class="button">±</button>
+                    <button class="button">←</button>
+                    <button class="button">÷</button>
+                </div>
+                <div class="row2">
+                    <button class="button lhs-buttons">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button">×</button>
+                </div>
+                <div class="row3">
+                    <button class="button lhs-buttons">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">-</button>
+                </div>
+                <div class="row4">
+                    <button class="button lhs-buttons">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">+</button>
+                </div>
+                <div class="row5">
+                    <button class="button x2-size lhs-buttons">0</button>
+                    <button class="button">.</button>
+                    <button class="button">=</button>
+                </div>
+            </section>
+        </div>
+        <script src="./javascript/calculator.js"></script>
+    </body>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("./sw.js").then(function (reg) {
+                console.log(
+                    "Service worker has been registered for scope: " + reg.scope
+                );
+            });
+        }
+    </script>
+</html>
