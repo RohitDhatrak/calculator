@@ -1,4 +1,4 @@
 # Calculator
 
 [Link to the website](https://rohits-calculator.netlify.app/)
-![Preview](/images/preview.jpg)
+<img src="/images/preview.jpg" width="150"/>
